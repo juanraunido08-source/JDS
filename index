@@ -1,0 +1,33 @@
+<html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Equipo</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div id="contenedor-principal">
+        <!-- Sección 1: Header - Estudiante 1 -->
+        <div id="seccion-header">
+            <!-- AQUÍ VA EL CÓDIGO DE SECCION1.HTML -->
+        </div>
+        
+        <!-- Sección 2: Biografía - Estudiante 2 -->
+        <div id="seccion-biografia">
+            <!-- AQUÍ VA EL CÓDIGO DE SECCION2.HTML -->
+        </div>
+        
+        <!-- Sección 3: Galería - Estudiante 3 -->
+        <div id="seccion-galeria">
+            <!-- AQUÍ VA EL CÓDIGO DE SECCION3.HTML -->
+        </div>
+        
+        <!-- Sección 4: Footer - Estudiante 4 -->
+        <div id="seccion-footer">
+            <!-- AQUÍ VA EL CÓDIGO DE SECCION4.HTML -->
+        </div>
+    </div>
+</body>
+</html>
