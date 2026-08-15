@@ -1,0 +1,109 @@
+<footer class="footer-game">
+  <div class="footer-container">
+    <!-- Información de Contacto -->
+    <div class="footer-section contact-info">
+      <h3>Contacto GameZone</h3>
+      <p><i class="fas fa-envelope"></i> Soporte: soporte@gamezone.com</p>
+      <p><i class="fas fa-phone"></i> Teléfono: +57 (601) 555-0199</p>
+      <p><i class="fas fa-map-marker-alt"></i> Ubicación: Villavicencio, Colombia</p>
+    </div>
+
+    <!-- Mapa del sitio / Enlaces rápidos -->
+    <div class="footer-section site-map">
+      <h3>Enlaces Rápidos</h3>
+      <ul>
+        <li><a href="#header">Inicio</a></li>
+        <li><a href="#biografia">Sobre Nosotros</a></li>
+        <li><a href="#galeria">Juegos y Proyectos</a></li>
+        <li><a href="#terminos">Términos y Condiciones</a></li>
+      </ul>
+    </div>
+
+    <!-- Iconos de Redes Sociales -->
+    <div class="footer-section social-links">
+      <h3>Síguenos</h3>
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://discord.com" target="_blank" aria-label="Discord"><i class="fab fa-discord"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Derechos reservados con año actual -->
+  <div class="footer-bottom">
+    <p>&copy; 2026 GameZone. Todos los derechos reservados. Diseñado para la práctica de herramientas computacionales.</p>
+  </div>
+</footer>
+.footer-game {
+  background-color: #1a1a24;
+  color: #ffffff;
+  padding: 40px 20px 20px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-top: 3px solid #7289da;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-section h3 {
+  color: #00ffff;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.footer-section p, .footer-section li {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #cccccc;
+}
+
+.site-map ul {
+  list-style: none;
+  padding: 0;
+}
+
+.site-map a {
+  color: #cccccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.site-map a:hover {
+  color: #00ffff;
+  text-decoration: underline;
+}
+
+.social-icons a {
+  display: inline-block;
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-right: 15px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #00ffff;
+  transform: translateY(-4px);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid #333344;
+  font-size: 0.85rem;
+  color: #888888;
+}
