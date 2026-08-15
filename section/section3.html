@@ -1,0 +1,64 @@
+
+<div id="seccion-galeria">
+    <button class="flecha-galeria prev" onclick="cambiarImagen(-1)">❮</button>
+
+    <img src="images.jpg" alt="Descripción de la imagen 1" class="img-galeria active">
+    <img src="gaming.jpg" alt="Descripción de la imagen 2" class="img-galeria">
+    <img src="images1.jpg" alt="Descripción de la imagen 3" class="img-galeria">
+
+    <button class="flecha-galeria next" onclick="cambiarImagen(1)">❯</button>
+</div>
+
+<style>
+#seccion-galeria {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+.img-galeria {
+    width: 100%;
+    display: none;
+    height: auto;
+}
+.img-galeria.active {
+    display: block;
+}
+.flecha-galeria {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 10;
+}
+.flecha-galeria:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.prev { left: 10px; }
+.next { right: 10px; }
+</style>
+
+<script>
+let indiceActual = 0;
+const imagenes = document.querySelectorAll('.img-galeria');
+
+function cambiarImagen(direccion) {
+    imagenes[indiceActual].classList.remove('active');
+    indiceActual += direccion;
+    
+    if (indiceActual >= imagenes.length) {
+        indiceActual = 0;
+    }
+    if (indiceActual < 0) {
+        indiceActual = imagenes.length - 1;
+    }
+    
+    imagenes[indiceActual].classList.add('active');
+}
+</script>
